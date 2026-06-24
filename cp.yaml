@@ -20,3 +20,5 @@ spec:
         image: nginxdemos/hello
       - name: c2
         image: redis
+      - name: c3
+        image: caddy
