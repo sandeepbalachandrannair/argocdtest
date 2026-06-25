@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sandeep-nginx-hello
+  namespace: sandeep
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sandeep-nginx-hello
+  template:
+    metadata:
+      labels:
+        app: sandeep-nginx-hello
+    spec:
+      containers:
+        - name: sandeep-nginx-hello
+          image: yourdockerhubuser/sandeep-nginx-hello:sandeep-v1.0
+          ports:
+            - containerPort: 80
