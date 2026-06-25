@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: sandeep-nginx-hello
-          image: yourdockerhubuser/sandeep-nginx-hello:sandeep-v1.0
+          image: sandeepnair96/sandeep-nginx-hello:sandeep-v1.0
           ports:
             - containerPort: 80
